@@ -1,0 +1,241 @@
+:root{
+    --background-body:rgb(10, 80, 138);
+    --color-light-blue:#08e7eff8;
+    --color-alibacube:aliceblue;
+}
+
+*{
+    margin: 0px;
+    background-color: var(--background-body);
+    overflow-x: hidden;
+}
+
+#outer-div{
+    margin: auto;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+}
+
+/* input div strt */
+#meal-header{
+    color: var(--color-light-blue);
+    font-family:  Arial, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 20px;
+}
+#meal-header:hover{
+   opacity: 0.8;
+}
+
+.meal-input{
+    width: 30vw;
+    height: 35px;   
+    margin-top: 20px;
+    border-width: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0.5px gray;
+    padding: 10px;
+    font-weight: 450;
+    background-color: var(--color-alibacube);
+}
+
+.meal-input:focus{
+    outline: none;
+}
+
+#search{
+    height: 36px;
+    width: 5rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-width: 0.2px;
+    color: var(--color-alibacube);
+    font-weight: 600;
+}
+.search,#search{
+    background-color: #800080;
+}
+#search:hover{
+    box-shadow: 2px 2px 1px 0.5px grey;
+    opacity: 0.8;
+}
+
+#error_msg{
+    font-size: 18px;
+    color: red;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#input-div div,.input-div >div{
+    position: relative;
+    text-align: center;
+}
+
+.random{
+    width: 10rem;
+    height: 35px;
+    margin:auto ;
+    background-color: #800080;
+    color: var(--color-alibacube);
+    border-radius: 10px;
+    font-weight: 600;
+    border-width: 0px;
+    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.random:hover{
+    opacity: 0.8;
+    box-shadow: 2px 2px 1px 0.5px gray;
+    outline: none;
+}
+
+#meal-list{
+ display: flex;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meal-item{
+    width: 20vw;
+    height: 50vh;
+    background-color: var(--color-alibacube);
+    box-shadow: 2px 2px 1px 3px black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 10px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+}
+
+.meal-item p{
+    text-align: center;
+}
+
+.container-fluid, .nav-item > button{
+    font-size: xx-large;
+    color: antiquewhite;
+}
+.container-fluid > img{
+    height: 18vh;
+    width: 18vw;
+    border-radius: 40%;
+}
+img{
+    height: 20vh ;
+    width: 100%;
+    background-color: var(--color-alibacube);
+}
+.meal-name{
+    text-align: center;
+    background-color: var(--color-alibacube);
+}
+
+/* used to hide scrollbar */
+.meal-item::-webkit-scrollbar{
+    display: none;
+   
+}
+
+.meal-name h3{
+    background-color: var(--color-alibacube);
+    color: rgb(154, 13, 225);
+    overflow-y: hidden;
+}
+
+
+.meal-name p{
+    background-color: var(--color-alibacube);
+    color: gray;
+    margin-top: 0px;
+}
+
+.meal-name .add{  
+    width: 100%;
+    color: var(--color-alibacube);
+    font-family: sans-serif;
+    padding: 2px;
+    border-width: 0px;
+}
+.meal-name .add,.meal-name .add > i,.meal-name .delete,.meal-name .delete > i{
+    background-color: #ff9f00;
+}
+
+.meal-name .add:hover{
+    box-shadow: 0px 2px 2px 0.5px gray;
+    opacity: 0.9;
+}
+
+.meal-name .delete{
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--color-alibacube);
+    font-family: sans-serif;
+    padding: 2px;
+    border-width: 0px;
+}
+
+
+.meal-name .delete:hover{
+    box-shadow: 0px 2px 2px 0.5px gray;
+    opacity: 0.8;
+}
+
+.notFound{
+    text-align: center;
+    color: crimson;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* fav list strt here */
+#div-list{
+    display: flex;
+}
+#div-list ul{
+    /* padding: 0px; */
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+/*  */
+
+#fav-tag{
+    color: var(--color-alibacube);
+    overflow-y: hidden;
+    background-color: crimson;
+    width: 20rem;
+    height: auto !important;
+    margin: auto;
+    padding: 8px;
+    padding-left: 1.2rem;
+    font-family:  'Trebuchet MS', sans-serif;
+    box-shadow: 3px 3px 3px 1px gray;
+}
+
+.fav-list{
+    width: 100%;
+    height: fit-content !important;
+}
+
+/* style the greetings */
+#greet{
+    text-align: center;
+    font-size: 30px;
+    color:var(--color-light-blue);
+    padding-top: 80px;
+    font-weight: 700;
+}
